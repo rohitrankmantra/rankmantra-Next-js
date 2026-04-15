@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--max-old-space-size=4096' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "next": "^14.1.0",
     "@emotion/styled": "^11.14.0",
     "@heroicons/react": "^2.2.0",
     "@mui/material": "^6.4.2",
@@ -21,8 +18,11 @@
     "framer-motion": "^12.4.7",
     "gsap": "^3.12.7",
     "lucide-react": "^0.474.0",
+    "next": "^14.1.0",
+    "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.9",
     "react-awesome-reveal": "^4.3.1",
+    "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-hook-form": "^7.54.2",
     "react-hot-toast": "^2.5.2",
@@ -36,9 +36,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
+    "cross-env": "^10.1.0",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0"
+    "eslint-config-next": "^14.1.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }

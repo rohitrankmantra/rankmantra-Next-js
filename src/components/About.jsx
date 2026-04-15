@@ -45,60 +45,58 @@ const About = () => {
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center lg:gap-10 secondary-font">
+      <div className="flex flex-col lg:flex-row items-center lg:gap-12 secondary-font">
         <div
           data-aos="fade-up"
-          className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0"
+          className="lg:w-1/2 w-full md:w-3/4 py-8 lg:py-12 px-6 md:px-0"
         >
           <Image 
             src="/assets/about.jpg" 
             alt="About Rankmantra" 
             width={800} 
             height={600} 
-            className="w-full h-auto rounded-lg shadow-lg" 
+            className="w-full h-auto rounded-2xl shadow-2xl" 
           />
         </div>
-        <div className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0">
+        <div className="lg:w-1/2 w-full md:w-3/4 px-6 md:p-0">
           <div data-aos="fade-left">
-            <p className="text-lg mt-5 text-gray-600 primary-font">
+            <p className="text-base lg:text-lg mt-5 text-gray-600 primary-font leading-relaxed">
               RankMantra offers a range of services, including expert SEO, SMM, PPC, and web development. We help businesses enhance their online presence, drive traffic, and boost conversions through tailored strategies and cutting-edge technology, ensuring measurable growth and success.
             </p>
           </div>
 
           <div
             data-aos="zoom-in"
-            className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+            className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-8"
           >
             <div
-              className="bg-red-600 w-fit p-2 md:p-5 rounded"
-              style={{ color: "white" }}
+              className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white"
             >
-              <BsPeople size={"28px"} />
+              <BsPeople size={"24px"} />
             </div>
             <div className="w-full">
-              <h2 className="text-[#7A6960] text-xl font-medium">
+              <h2 className="text-[#7A6960] text-lg lg:text-xl font-bold">
                 Expert Mentorship:
               </h2>
-              <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+              <p className="text-sm lg:text-base text-gray-500 primary-font mt-1">
                 Personalized guidance from industry professionals to help you achieve your learning goals.
               </p>
             </div>
           </div>
           <div
             data-aos="zoom-in"
-            className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+            className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-6"
           >
             <div
-              className="bg-red-600 w-fit p-2 md:p-5 rounded"
-              style={{ color: "white" }}
+              className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white"
             >
-              <BsPeople size={"28px"} />
+              <BsPeople size={"24px"} />
             </div>
             <div className="w-full">
-              <h2 className="text-[#7A6960] text-xl font-medium">
+              <h2 className="text-[#7A6960] text-lg lg:text-xl font-bold">
                 Skill Development:
               </h2>
-              <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+              <p className="text-sm lg:text-base text-gray-500 primary-font mt-1">
                 Focus on real-world skills that enhance your career prospects.
               </p>
             </div>
@@ -106,18 +104,15 @@ const About = () => {
 
           <p
             data-aos="zoom-in"
-            className="text-lg mt-5 text-gray-600 primary-font"
+            className="text-base lg:text-lg mt-8 text-gray-600 primary-font italic leading-relaxed"
           >
             Our tailored strategies have consistently driven increased online visibility, enhanced brand engagement, and significant growth in traffic and conversions, delivering measurable success for our clients.
           </p>
-          <div className="flex flex-col justify-center sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
-            <div>
-              <a href="#contact" className="">
-                <CtaButton name={"Get Started"} />
-              </a>
-            </div>
+          <div className="flex flex-col justify-center sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-6 mt-10">
+            <a href="#contact">
+              <CtaButton name={"Get Started"} />
+            </a>
           </div>
-
         </div>
       </div>
     </div>

@@ -67,4 +67,13 @@ body::-webkit-scrollbar-thumb {
   .flex-center-between {
     @apply flex items-center justify-between;
   }
+  .animate-slow-zoom {
+    animation: slow-zoom 20s ease-in-out infinite;
+  }
+}
+
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }

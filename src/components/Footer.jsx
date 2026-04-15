@@ -30,7 +30,8 @@ const Footer = () => {
             alt="logo" 
             width={176} 
             height={44} 
-            className="w-44 mb-4 h-auto" 
+            style={{ height: "auto" }}
+            className="w-44 mb-4" 
           />
           <p className="text-sm text-zinc-700 mb-4">
             Starting in 2015 with only one customer, we've expanded into a full-blown digital marketing agency providing outstanding services to thousands of companies.
