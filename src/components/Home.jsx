@@ -21,19 +21,19 @@ const Home = () => {
       <NavBar />
       <ChatWidget />
       
-      <section className="w-full h-screen lg:px-0 overflow-hidden bg-[#FEFAF8] border-b border-orange-100 pt-16">
+      <section className="w-full min-h-screen lg:px-0 overflow-hidden bg-black relative flex items-center">
         <Hero />
       </section>
 
-      <section id="about" className="w-full lg:px-2 mt-10 overflow-hidden bg-[#ffffff] border-b border-orange-100">
+      <section id="about" className="w-full lg:px-2 py-20 overflow-hidden bg-[#ffffff] border-b border-orange-100">
         <About />
       </section>
 
-      <section id="services" className="w-full py-16 lg:px-10 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
+      <section id="services" className="w-full py-20 lg:px-10 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <Services />
       </section>
 
-      <section id="portfolio" className="w-full max-h-fit py-16 lg:px-10 overflow-hidden border-b border-orange-100">
+      <section id="portfolio" className="w-full max-h-fit py-20 lg:px-10 overflow-hidden border-b border-orange-100">
         <Portfolio />
       </section>
 

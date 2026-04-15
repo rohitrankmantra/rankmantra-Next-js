@@ -9,17 +9,6 @@ import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
-import 'swiper/css/autoplay';
-// import required modules
-import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper/modules';
-
 const WebsiteRedesignPage = () => {
   useEffect(() => {
     AOS.init({
@@ -28,58 +17,43 @@ const WebsiteRedesignPage = () => {
     });
   }, []);
 
-  const heroImages = [
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1172&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1170&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1170&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop"
-  ];
-
   return (
     <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600">
       <NavBar />
       
       {/* Hero Section */}
-      <section className="relative w-full h-[85vh] overflow-hidden">
-        <Swiper
-          modules={[Navigation, Pagination, EffectFade, Autoplay]}
-          effect={'fade'}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          className="w-full h-full"
-        >
-          {heroImages.map((img, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div className="absolute inset-0 z-0">
-                  <Image 
-                    src={img} 
-                    alt={`Hero Background ${index + 1}`} 
-                    fill
-                    className="object-cover opacity-60 grayscale-[20%]"
-                    priority={index === 0}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-white"></div>
-                </div>
-                
-                <div className="relative z-10 text-center px-6 max-w-5xl mx-auto" data-aos="fade-up">
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-gray-900 tracking-tight mb-8 leading-[1.1]">
-                    Website <span className="text-red-600 font-light italic">Redesigning</span>
-                  </h1>
-                  <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
-                    Revitalize your online presence with our comprehensive website redesign services. We modernize your site with current design trends, improved functionality, and better user experience to boost conversions.
-                  </p>
-                  <div className="mt-12">
-                    <button className="bg-gray-900 hover:bg-red-600 text-white font-medium py-4 px-10 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-xs hover:shadow-2xl active:scale-95">
-                      SCHEDULE A CALL
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <section className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0 scale-105">
+          <Image 
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1172&auto=format&fit=crop" 
+            alt="Website Redesign Hero" 
+            fill
+            className="object-cover animate-slow-zoom"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center" data-aos="fade-up">
+          <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
+            <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">Modern Digital Presence</span>
+          </div>
+          <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter mb-8 leading-[1]">
+            Website <span className="text-red-600 font-light italic">Redesigning</span>
+          </h1>
+          <p className="text-lg md:text-2xl text-gray-200 max-w-4xl leading-relaxed font-medium mb-12 mx-auto drop-shadow-2xl italic">
+            Revitalize your online presence with our comprehensive website redesign services. We modernize your site with current design trends, improved functionality, and better user experience.
+          </p>
+          <div className="flex flex-wrap gap-6 justify-center">
+            <button 
+              suppressHydrationWarning
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-red-600 hover:bg-white hover:text-red-600 text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:shadow-[0_25px_50px_rgba(220,38,38,0.4)] active:scale-95"
+            >
+              SCHEDULE A CALL
+            </button>
+          </div>
+        </div>
       </section>
 
       {/* Intro Section */}
