@@ -24,8 +24,7 @@ function NavBar() {
                 alt="Rankmantra Logo" 
                 width={192} 
                 height={48} 
-                style={{ height: "auto" }}
-                className="w-48"
+                style={{ width: "192px", height: "auto" }}
                 priority
               />
             </Link>

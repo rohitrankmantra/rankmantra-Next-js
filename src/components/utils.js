@@ -100,6 +100,6 @@ export const Menus = [
   },
   {
     name: "GALLERY",
-    link:"/"
+    link:"/gallery"
   },
 ];
