@@ -5,7 +5,7 @@ import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
-import Portfolio from '@/components/Portfolio'
+// import Portfolio from '@/components/Portfolio'
 import Clients from '@/components/Clients'
 import Faquestions from '@/components/Faquestions'
 import Team from '@/components/Team'
@@ -33,9 +33,9 @@ const Home = () => {
         <Services />
       </section>
 
-      <section id="portfolio" className="w-full max-h-fit py-20 lg:px-10 overflow-hidden border-b border-orange-100">
+      {/* <section id="portfolio" className="w-full max-h-fit py-20 lg:px-10 overflow-hidden border-b border-orange-100">
         <Portfolio />
-      </section>
+      </section> */}
 
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <FreqAskedQues />
