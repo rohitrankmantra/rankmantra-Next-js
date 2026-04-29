@@ -1,4 +1,4 @@
-import { Circle, Link, OrigamiIcon, Search, WebhookIcon } from "lucide-react";
+import { Circle, Link, OrigamiIcon, Search, WebhookIcon, Server, Cloud, Layout, Users, Zap, Database, Globe, ArrowRightLeft } from "lucide-react";
 import { DraftingCompass } from "lucide-react";
 import { MdDesignServices, MdDeveloperBoard, MdEco, MdLogoDev } from "react-icons/md";
 import { SiErpnext, SiShopify, SiWebstorm, SiWix, SiWordpress } from "react-icons/si";
@@ -8,6 +8,68 @@ export const Menus = [
   {
     name: "SEO",
     link:"/search"
+  },
+  {
+    name: "HOSTING",
+    subMenu: [
+      {
+        name: "Cheap Hosting",
+        icon: Server,
+        link: "/cheap-hosting"
+      },
+      {
+        name: "Cloud Hosting - In",
+        icon: Cloud,
+        link: "/cloud-hosting-in"
+      },
+      {
+        name: "Cloud Hosting",
+        icon: Cloud,
+        link: "/cloud-hosting"
+      },
+      {
+        name: "cPanel Hosting",
+        icon: Layout,
+        link: "/cpanel-hosting"
+      },
+      {
+        name: "Reseller Hosting",
+        icon: Users,
+        link: "/reseller-hosting"
+      },
+      {
+        name: "Wordpress Hosting",
+        icon: SiWordpress,
+        link: "/wordpress-hosting"
+      },
+      {
+        name: "Litespeed Hosting",
+        icon: Zap,
+        link: "/litespeed-hosting"
+      },
+      {
+        name: "VPS Hosting",
+        icon: Database,
+        link: "/vps-hosting"
+      },
+    ],
+    gridCols: 2,
+  },
+  {
+    name: "DOMAINS",
+    subMenu: [
+      {
+        name: "Register a new domain",
+        icon: Globe,
+        link: "/register-domain"
+      },
+      {
+        name: "Transfer a domain to us",
+        icon: ArrowRightLeft,
+        link: "/transfer-domain"
+      },
+    ],
+    gridCols: 1,
   },
   {
     name: "WEBSITE SERVICES",
