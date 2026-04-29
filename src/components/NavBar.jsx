@@ -24,8 +24,7 @@ function NavBar() {
                 alt="Rankmantra Logo" 
                 width={192} 
                 height={48} 
-                style={{ height: "auto" }}
-                className="w-48"
+                style={{ width: "192px", height: "auto" }}
                 priority
               />
             </Link>
@@ -41,7 +40,7 @@ function NavBar() {
             <button
               aria-label="contact-us"
               suppressHydrationWarning
-              className="bg-red-600 text-sm text-black z-[999] relative lg:px-5 lg:py-3 py-2 px-1 lg:left-0 left-2 shadow rounded-xl flex-center"
+              className="bg-red-600 text-sm text-white z-[999] relative lg:px-5 lg:py-3 py-2 px-1 lg:left-0 left-2 shadow rounded-xl flex-center"
             >
               Contact Us
             </button>

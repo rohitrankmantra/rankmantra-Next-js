@@ -180,8 +180,8 @@ const SocialMediaPage = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2" data-aos="fade-right">
             <Image 
-              src="https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?q=80&w=1000" 
-              alt="SEO Expert" 
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000" 
+              alt="SEO Expert analyzing website performance with team" 
               width={600}
               height={400}
               className="rounded-2xl shadow-2xl"
