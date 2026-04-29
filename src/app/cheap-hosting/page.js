@@ -6,8 +6,8 @@ import Footer from '@/components/Footer'
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Server, Zap, ShieldCheck, Headphones, Database, Globe, Rocket, CheckCircle2 } from "lucide-react";
-import { SiWordpress, SiJoomla, SiOpencart } from "react-icons/si";
+import { Server, Zap, ShieldCheck, Headphones, Database, Globe, Rocket, CheckCircle2, ShoppingCart } from "lucide-react";
+import { SiWordpress, SiJoomla } from "react-icons/si";
 
 const CheapHostingPage = () => {
   useEffect(() => {
@@ -173,7 +173,7 @@ const CheapHostingPage = () => {
             {[
               { name: "WordPress", icon: <SiWordpress size={64} className="text-[#21759b]" />, desc: "At its core, WordPress is the simplest, most popular way to create your own website or blog. In fact, WordPress powers over 43.3% of all the websites on the Internet." },
               { name: "Joomla", icon: <SiJoomla size={64} className="text-[#f47321]" />, desc: "Joomla is an open-source content management system used for creating Web content. It is written in PHP and makes use of a MySQL database for storing data." },
-              { name: "Opencart", icon: <SiOpencart size={64} className="text-[#2396d8]" />, desc: "The OpenCart marketplace features 13000+ modules and themes to jump-start, grow and expand your business. You can find beautiful themes for just about any sector." }
+              { name: "Opencart", icon: <ShoppingCart size={64} className="text-[#2396d8]" />, desc: "The OpenCart marketplace features 13000+ modules and themes to jump-start, grow and expand your business. You can find beautiful themes for just about any sector." }
             ].map((cms, i) => (
               <div key={i} className="flex flex-col items-center" data-aos="fade-up" data-aos-delay={i * 100}>
                 <div className="mb-6 p-4 rounded-full bg-gray-50">{cms.icon}</div>
