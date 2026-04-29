@@ -1,9 +1,13 @@
-'use client'
-
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { portfolioData } from '@/components/portfolioData'
 import Link from 'next/link'
+
+export function generateStaticParams() {
+  return Object.keys(portfolioData).map((id) => ({
+    id: id,
+  }))
+}
 
 export default function PortfolioProjectPage({ params }) {
   const { id } = params
