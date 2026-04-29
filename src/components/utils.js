@@ -9,6 +9,7 @@ export const Menus = [
     name: "SEO",
     link:"/search"
   },
+  /*
   {
     name: "HOSTING",
     subMenu: [
@@ -71,6 +72,7 @@ export const Menus = [
     ],
     gridCols: 1,
   },
+  */
   {
     name: "WEBSITE SERVICES",
     subMenuHeading: ["DEVELOPMENT", "DESIGNING","CMS DEVELOPMENT"],
